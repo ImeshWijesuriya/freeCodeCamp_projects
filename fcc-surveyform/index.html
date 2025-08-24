@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey Form</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this form with the required information.</p>
+  <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+  <fieldset>
+    <label for="name" id="name-label">Full Name <input type="text" id="name" placeholder="James Smith" required></label>
+  <label for="email" id="email-label">
+    Email <input type="email" id="email" placeholder="jamessmith@gmail.com" required></label>
+  <label for="number" id="number-label"> Phone Number <input type="number" id="number" minlength="11" maxlength="11" min="0" max="9" placeholder="e.g. 01234567890" required></label>
+  </fieldset>
+  <fieldset>
+<label for="dropdown">What is your current role? <select id="dropdown" name="role" required>
+    <option value="">(select one)
+    </option>
+    <option value="1">Student
+    </option>
+    <option value="2">Teacher
+    </option>
+    <option value="3">Other
+    </option>
+    </select></label>
+    Would you recommend freeCodeCamp to others? <label for="no"> <input type="radio" id="no" name="recommend"value="no"  checked> No </label>
+    <label class="inline" for="yes"><input type="radio" id="yes" value="yes" name="recommend"> Yes </label> 
+    </fieldset>
+    <fieldset>
+    What improvements should be made? <label for="community" > <input type="checkbox"id="community" class="inline" value="Open Source Community"> Open Source Community
+</label>
+<label for="front"> <input type="checkbox" id="front" value="Front-EndProjects" > Front-End Projects
+</label>
+<label for="back" > <input type="checkbox" id="back" value="Back-End Projects"> Back-End Projects
+</label>
+<label for="other" > <input type="checkbox" id="other" value="Other" > Other
+</label>
+<label for="feedback">Detail any specific feedback. <textarea id="feedback" rows="3" cols="30"></textarea></label>
+</fieldset>
+<input type="submit" value="Submit" id="submit"> 
+  </form>
+</body>
